@@ -1,0 +1,24 @@
+---
+- reverse list:
+    desc: 
+      input: list
+      output: list with items from input list reversed
+      example:
+        mylist = [0,1,2,3]
+        print reverse_list(mylist)
+        > [3,2,1,0]
+- swap dict keys & values:
+    desc:
+      input: dict
+      output: dict with keys containing all input values, values being arrays with all input keys that contain said values
+      example:
+        mydict = { 
+          'key1': 'value1',
+          'key2': 'value2',
+          'key3': 'value3',
+          'key4': 'value1',
+          'key5': 'value2',
+          'key6': 'value3',
+        }
+        print dict_values_as_keys(mydict)
+        > { 'value1': [ 'key1', 'key4' ], 'value2': [ 'key2', 'key5' ], 'value3': [ 'key3', 'key6' ] }
