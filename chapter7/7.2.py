@@ -17,6 +17,9 @@ fh = open(fname)
 my_list = []
 for line in fh:
     if not line.startswith("X-DSPAM-Confidence:") : continue
+    num = filter(str.isdigit, line)
+    floating_num = float(num)
+    print floating_num
     float_num = float(int(filter(str.isdigit, line)))
     my_list.append(float_num)
     
